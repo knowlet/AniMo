@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="18dp"
+                android:layout_height="42dp"
+                android:src="@drawable/search" />
+
+            <TextView
+                android:id="@+id/tab_search_textView_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/tab_search_label_area" />
+
+            <Spinner
+                android:id="@+id/tab_search_spinner_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="15dp"
+             android:layout_weight="1" >
+
+             <ImageView
+                 android:id="@+id/ImageView01"
+                 android:layout_width="19dp"
+                 android:layout_height="42dp"
+                 android:src="@drawable/search" android:contentDescription="TODO"/>
+
+            <TextView
+                android:id="@+id/tab_search_textView_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/tab_search_label_type" />
+
+            <Spinner
+                android:id="@+id/tab_search_spinner_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout> 
+    
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="8.47" >
+
+             <Button
+                 android:id="@+id/tab_search_button_submit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="top|center_horizontal"
+                 android:layout_weight="1"
+                 android:text="@string/tab_search_btn_search" />
+          
+         </LinearLayout> 
+         
+    </LinearLayout>
+    
+</LinearLayout>
